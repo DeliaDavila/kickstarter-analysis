@@ -9,14 +9,14 @@ Louise, the purpose of this project is to help you use Kickstarter for funding y
 ## Analysis and Challenges
 To help answer your questions from raw Kickstarter data, I created two visualizations. The first graph *Theater Outcomes by Launch Date* answers the question of what month would be best to launch a successful theater Kickstarter campaign. The second graph *Outcomes based on Goals* helps you determine what goal amounts have tended to be successful. 
 ### Analysis of Outcomes Based on Launch Date
-[Theater_Outcomes_vs_Launch]
+![Theater_Outcomes_vs_Launch](https://github.com/DeliaDavila/kickstarter-analysis/blob/main/Resources/Theater_Outcomes_vs_Launch.png)
 To create this graph, I created a pivot table with two filters at the top that allow the data to be sorted by parent category and years. Months of the year are shown in rows and outcomes in columns. 
 [PivotTable]
 For the launch date question, the category is set to theater and the years is left unfiltered. This creates a table showing how many campaigns were launched in each month of the year, with separate totals for different outcomes (successful, failed, canceled). 
 [OutcomesTable]
 From this pivot table, I created a line graph. successful campaigns have a distinct pattern of highest successful outcomes in May and lowest successful outcomes in The graph shows that December.
 ### Analysis of Outcomes Based on Goals
-[Theater_Outcomes_vs_Launch]
+![Outcomes_vs_Goals](https://github.com/DeliaDavila/kickstarter-analysis/blob/main/Resources/Outcomes_vs_Goals.png)
 To create this visualization, I first created a table that separated projects into goal levels in the rows and outcomes (successful, failed, canceled) in columns. 
 [OutcomesGoals]
 To populate these columns, I limited the data in three ways to sort counts into columns and rows
