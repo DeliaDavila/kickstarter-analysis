@@ -63,19 +63,19 @@ An issue with *Outcomes based on Goals* is that results are not consistent at hi
 ## Results
 Conducting analysis of the raw Kickstarter data, I was able to answer your two questions about how to structure a Kickstarter campaign. I also have sections to discuss limitations and make additional suggestions.
 
-- Conclusions from *Theater Outcomes by Launch Date*
+### Conclusions from *Theater Outcomes by Launch Date*
 1. Theater projects launched in May have significantly more successful outcomes than failed outcomes. This is the best month to launch a campaign.
 2. Theater projects launched in December have a much lower success rate. Avoid launching a campaign in December.
 
-- Conclusion from *Outcomes based on Goals*
+### Conclusion from *Outcomes based on Goals*
 For smaller campaigns (goals under 30,000 dollars), the success rate declined and the failure rate increased as campaigns increased their goal amounts. From this, I suggest that you set your goal at the smallest amount possible for your budget.
 
-- What are some limitations of this dataset?
+### Limitations of this dataset
 The dataset is limited in some ways. One limit is that the data is only for Kickstarter, which is not the only means of crowdfunding a project. 
 
 Another limit is that the data doesn’t contain information about how many people saw the campaign, merely how many people contributed. It’s not possible to determine directly how many people will need to see your campaign in order to reach enough backers for the project to be successful.
 
-- Additional suggestions
+### Additional suggestions
 To help you determine best practices for other aspects of your campaign, I suggest additional visualizations drawn from the data. 
 1. A graph showing the average donation for successful and unsuccessful projects shown by goal level. This may help you decide what perk amounts work the best.
 2. A graph showing number of backers of successful and unsuccessful projects at each goal level. This may help you estimate the reach you'll need for a campaign to succeed.
