@@ -35,7 +35,9 @@ To populate the table, I limited the data in three ways to sort counts into colu
 
 Here is a sample of the code used for the first funding level:
 
-'''=COUNTIFS(Kickstarter!$F:$F,"successful", Kickstarter!$R:$R, "plays", Kickstarter!$D:$D,"<1000")'''
+```
+=COUNTIFS(Kickstarter!$F:$F,"successful", Kickstarter!$R:$R, "plays", Kickstarter!$D:$D,"<1000")
+```
 
 Once the successful, failed, and canceled numbers were organized into funding levels, I summed up the numbers to come up with total projects for each goal level. 
 
