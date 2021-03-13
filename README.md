@@ -12,10 +12,10 @@ To help answer your questions from raw Kickstarter data, I created two visualiza
 ![Theater_Outcomes_vs_Launch](https://github.com/DeliaDavila/kickstarter-analysis/blob/main/Resources/Theater_Outcomes_vs_Launch.png)
 
 To create this graph, I created a pivot table with two filters at the top that allow the data to be sorted by parent category and years. Months of the year are shown in rows and outcomes in columns. 
-![PivotTable](https://github.com/DeliaDavila/kickstarter-analysis/blob/main/Images/Theater_Outcomes_vs_Launch.png)
+![PivotTable](https://github.com/DeliaDavila/kickstarter-analysis/blob/main/Images/PivotTable.png)
 
 For the launch date question, the category is set to theater and the years is left unfiltered. This creates a table showing how many campaigns were launched in each month of the year, with separate totals for different outcomes (successful, failed, canceled). 
-![OutcomesTable](https://github.com/DeliaDavila/kickstarter-analysis/blob/main/Images/Theater_Outcomes_vs_Launch.png)
+![OutcomesTable](https://github.com/DeliaDavila/kickstarter-analysis/blob/main/Images/OutcomesTable.png)
 
 From this pivot table, I created a line graph. successful campaigns have a distinct pattern of highest successful outcomes in May and lowest successful outcomes in The graph shows that December.
 ### Analysis of Outcomes Based on Goals
@@ -23,7 +23,7 @@ From this pivot table, I created a line graph. successful campaigns have a disti
 
 To create this visualization, I first created a table that separated projects into goal levels in the rows and outcomes (successful, failed, canceled) in columns.
 
-![OutcomesGoals](https://github.com/DeliaDavila/kickstarter-analysis/blob/main/Images/Theater_Outcomes_vs_Launch.png)
+![OutcomesGoals](https://github.com/DeliaDavila/kickstarter-analysis/blob/main/Images/OutcomesGoals.png)
 
 To populate these columns, I limited the data in three ways to sort counts into columns and rows
 - Subcategory "plays"
@@ -35,16 +35,19 @@ Here is a sample of the code used for the data:
 =COUNTIFS(Kickstarter!$F:$F,"successful", Kickstarter!$R:$R, "plays", Kickstarter!$D:$D,"<1000")
 '''
 Once the successful, failed, and canceled numbers were organized into funding levels, I summed up the numbers to come up with total projects for each goal level. 
-![TotalProjects](https://github.com/DeliaDavila/kickstarter-analysis/blob/main/Images/Theater_Outcomes_vs_Launch.png)
+
+![TotalProjects](https://github.com/DeliaDavila/kickstarter-analysis/blob/main/Images/TotalProjects.png)
 
 Using the outcome numbers in each column and the total, I calculated the percentage of outcomes in each goal level. 
-![Percentages](https://github.com/DeliaDavila/kickstarter-analysis/blob/main/Images/Theater_Outcomes_vs_Launch.png)
+
+![Percentages](https://github.com/DeliaDavila/kickstarter-analysis/blob/main/Images/Percentages.png)
 
 From this data, I created the line graph. The graph shows a decline in Successful outcomes and an increase in Failing outcomes as the campaign goals increase, up until the goals go beyond $30,000. After this point, the relationships are less clear.
 ### Challenges and Difficulties Encountered
 One potential issue with *Theater Outcomes by Launch Date* would be drawing conclusions from just the successful campaigns. Without the comparison of other outcomes, the successful projects might indicate overall numbers for each month. Adding the failed and canceled outcomes as additional lines allows me to show that the pattern for successful outcomes is just for successful campaigns, not all campaigns regardless of outcome.
 Another issue with *Theater Outcomes by Launch Date* is that it shows results for all campaigns related to theater. Different kinds of projects exist within that data so just this graph alone won’t give a good picture of campaigns for plays. The “when to launch” question is best answered broadly, but for help determining how to set a funding goal, we’ll need to limit the data more so that you aren’t comparing a play launch to very different projects that might have much larger goals, such as building a theater space. 
 An issue with *Outcomes based on Goals* is that results are not consistent at higher funding levels. Larger projects may have more varied sources (planned giving, corporate gifts, or government grants), so the data set might be missing information about other funding options at higher levels. For this reason, my conclusion is stated for funding goals below $30,000 because a conclusion is more evident. Projects at lower levels are more likely to be funded by individual donors without prior planning, so you should make decisions based on those lower levels if you have no additional commitments prior to starting the campaign.
+
 ## Results
 Conducting analysis of the raw Kickstarter data, I was able to answer your two questions about how to structure a Kickstarter campaign. The conclusions are presented in sections below for each of the visualizations prepared. I have also made some additional suggestions following the conclusions.
 - What are two conclusions you can draw about the Outcomes based on Launch Date?
